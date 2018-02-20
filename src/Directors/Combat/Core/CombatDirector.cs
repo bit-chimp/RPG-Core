@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Assertions;
 
-namespace Mine.Combat
+using UnityEngine;
+
+namespace Libraries.btcp.RPG_Core.src.Directors.Combat.Core
 {
     public class CombatDirector
     {

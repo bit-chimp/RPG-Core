@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using ECS.Combat.Damage;
+
+using Libraries.btcp.ECS.src.Combat.Damage;
 using UnityEngine;
 
-namespace Mine.Combat
+namespace Libraries.btcp.RPG_Core.src.Directors.Combat.Core
 {
     public abstract class BaseAttack : IAttack
     {

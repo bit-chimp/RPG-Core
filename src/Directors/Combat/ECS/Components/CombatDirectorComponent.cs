@@ -1,6 +1,10 @@
-﻿using Mine.Combat;
+﻿using Entitas;
+using Libraries.btcp.RPG_Core.src.Directors.Combat.Core;
 
-public sealed class CombatDirectorComponent : Entitas.IComponent
+namespace Libraries.btcp.RPG_Core.src.Directors.Combat.ECS.Components
 {
-    public CombatDirector director;
+    public sealed class CombatDirectorComponent : IComponent
+    {
+        public CombatDirector director;
+    }
 }

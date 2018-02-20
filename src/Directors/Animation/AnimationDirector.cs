@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace unity.Helpers.Animations
+namespace Libraries.btcp.RPG_Core.src.Directors.Animation
 {
     public class AnimationDirector
     {

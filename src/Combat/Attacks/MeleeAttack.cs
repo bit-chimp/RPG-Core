@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Xml;
+
+using Libraries.btcp.RPG_Core.src.Directors.Combat.Core;
 using UnityEngine;
 
-namespace Mine.Combat.Attacks
+namespace Libraries.btcp.RPG_Core.src.Combat.Attacks
 {
     public class MeleeAttack : BaseAttack
     {

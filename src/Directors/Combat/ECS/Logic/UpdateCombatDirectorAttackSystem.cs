@@ -1,27 +1,27 @@
-﻿using System.Linq;
-using ECS.Combat.Damage;
-using Entitas;
-using unity.Helpers.Animations;
-using UnityEngine;
+﻿using Entitas;
 
-public class UpdateCombatDirectorAttackSystem : ICleanupSystem
+
+namespace Libraries.btcp.RPG_Core.src.Directors.Combat.ECS.Logic
 {
-    private Contexts m_contexts;
-    private IGroup<GameEntity>  m_completedAttacks;
-    private IGroup<GameEntity> m_animListener;
-
-    public UpdateCombatDirectorAttackSystem (Contexts contexts)
+    public class UpdateCombatDirectorAttackSystem : ICleanupSystem
     {
-        m_contexts = contexts;
-        m_completedAttacks = contexts.game.GetGroup(GameMatcher.AllOf(GameMatcher.CombatDirector,GameMatcher.AttackComplete));
+        private Contexts m_contexts;
+        private IGroup<GameEntity>  m_completedAttacks;
+        private IGroup<GameEntity> m_animListener;
 
-    }
-
-    public void Cleanup()
-    {
-        foreach (var e in m_completedAttacks.GetEntities())
+        public UpdateCombatDirectorAttackSystem (Contexts contexts)
         {
-            e.isAttackComplete = false;
+            m_contexts = contexts;
+            m_completedAttacks = contexts.game.GetGroup(GameMatcher.AllOf(GameMatcher.CombatDirector,GameMatcher.AttackComplete));
+
+        }
+
+        public void Cleanup()
+        {
+            foreach (var e in m_completedAttacks.GetEntities())
+            {
+                e.isAttackComplete = false;
+            }
         }
     }
 }

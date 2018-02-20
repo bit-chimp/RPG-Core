@@ -1,7 +1,6 @@
-﻿using Libraries.Patterns.Observer;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Mine.Combat
+namespace Libraries.btcp.RPG_Core.src.Directors.Combat.Core
 {
     public interface IFrameObserver
     {

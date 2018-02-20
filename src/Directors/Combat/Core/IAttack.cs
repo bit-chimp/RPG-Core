@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Mine.Combat
+namespace Libraries.btcp.RPG_Core.src.Directors.Combat.Core
 {
     public interface IAttack
     {
