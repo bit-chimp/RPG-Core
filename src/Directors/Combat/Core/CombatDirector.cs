@@ -77,7 +77,6 @@ namespace Libraries.btcp.RPG_Core.src.Directors.Combat.Core
 
             if (suitableAttacks.Count == 0)
             {
-                Debug.Log("No suitable attacks found");
                 return null;
             }
 
